@@ -1,21 +1,26 @@
 Hot Fix For Datasift, Rails 4 and AWS
 =====================
 
-Using datasift-ruby 3+, with Rails 4 on AWS does not work.  Datasift ruby requires multi_json 1.8+ which does not work on AWS with Rails 4.  
+Using datasift-ruby 3+, with Rails 4 on AWS does not work.  Datasift ruby requires multi_json 1.8+ which does not work on AWS with Rails 4. 
 
-Error message: MultiJson::AdapterError: Did not recognize your adapter specification (cannot load such file -- json/ext/parser).
+Downgraded multi_json in Gemspec to 1.7.8
 
-Fix Overview: Downgraded multi_json in Gemspec to 1.7.8
-
-
-Run options: --seed 26534
-
-
-Installation:
+Installation
+=====================
 
 gem "datasift", :github => "cometman/datasift_ruby_AWS_fix"
 
-Tested:
+
+Error message
+=====================
+MultiJson::AdapterError: Did not recognize your adapter specification (cannot load such file -- json/ext/parser).
+
+
+Test Results
+=====================
+
+Run options: --seed 26534
+
 # Running:
 
 .........................
