@@ -16,14 +16,7 @@ Error message
 MultiJson::AdapterError: Did not recognize your adapter specification (cannot load such file -- json/ext/parser).
 
 
-Test Results
-=====================
-
-Run options: --seed 26534
-
-# Running:
-
-.........................
+Tested:
 
 Finished in 0.832526s, 30.0291 runs/s, 31.2303 assertions/s.
 
